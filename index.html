@@ -7,10 +7,14 @@
     <title>Document</title>
     <script defer src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
     <script  src="script.js" defer></script>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
-<body>
-    <video width="720" height="560" autoplay muted></video>
-    <pre data-text class="text"  style="font-size: 2em; font-family: inherit; width: 100%; white-space: pre-wrap;"></pre>
+<body class="flex mt-20 flex-col justify-center items-center bg-purple-300">
+    <h1 class="text-2xl text-white font-bold">E-reader</h1>
+    <p class="text-md text-white font-regular">Steadily hold something readable up to the camera and press "space"</p>
+    <video class="shadow-lg rounded-lg mt-10 border-2 border-white-300 w-[720px] h-[560px]" width="720" height="560" autoplay muted></video>
+    <pre data-text class="text mt-10 text-xl text-center text-white font-semibold max-w-[600px] w-[90%]" ></pre>
 
     
 </body>
